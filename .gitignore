@@ -40,3 +40,6 @@ Thumbs.db
 ######################
 *.txt
 prettier.config.js
+node_modules/*
+package*
+prettier*
