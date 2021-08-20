@@ -9,8 +9,8 @@ function html() {
   .pipe(gulp.dest('./dist'));
 }
 
-function sass() {
-  return gulp.src('./src/sass/*.scss')
+function sass(done) {
+  gulp.src('./src/sass/*.scss')
   .pipe(styleSASS({
     errorLogToConsole: true,
     outputStyle: "compressed",
@@ -20,12 +20,15 @@ function sass() {
     suffix: '.min',
   }))
   .pipe(gulp.dest('./dist/css'))
-  .gulp.src('./src/sass/*.scss')
+  
+  gulp.src('./src/sass/*.scss')
   .pipe(styleSASS({
     errorLogToConsole: true,
   }))
   .on('error', console.error.bind(console))
   .pipe(gulp.dest('./dist/css'));
+
+  done();
 }
 
 function jsMin() {
@@ -42,10 +45,17 @@ function js() {
   .pipe(gulp.dest('./dist/js/'));
 }
 
+function ts() {
+  return tsProject.src()
+  .pipe(tsProject())
+  .js.pipe(gulp.dest('./dist/js/'));
+}
+
+
 function watchFiles() {
   gulp.watch('./src/*.html', html);
   gulp.watch('./src/sass/*.scss', sass);
-  gulp.watch('./src/js/script.js', gulp.series(js, jsMin));
+  gulp.watch('./src/js/script.js', js);
 }
 
 gulp.task('default', watchFiles);
