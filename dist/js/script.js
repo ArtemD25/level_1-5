@@ -36,7 +36,6 @@ startBtn.addEventListener('click', () => {
     sec15Btn.setAttribute('hidden', 'hidden');
     stopBtn.removeAttribute('hidden');
   }
-  
 });
 
 sec15Btn.addEventListener('click', () => {
