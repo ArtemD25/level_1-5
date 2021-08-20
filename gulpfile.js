@@ -6,7 +6,7 @@ let pipeline = require('readable-stream').pipeline;
 
 function html() {
   return gulp.src('./src/*.html')
-  .pipe(gulp.dest('./dist'));
+  .pipe(gulp.dest('./'));
 }
 
 function sass(done) {
