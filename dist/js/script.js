@@ -79,4 +79,4 @@ stopBtn.addEventListener('click', () => {
   showControls();
 });
 
-let num = 6;
+let num = 6
