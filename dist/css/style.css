@@ -8,7 +8,7 @@
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 body {
@@ -58,10 +58,17 @@ body .task .task__header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 0 40px 0;
 }
 
+@media (max-width: 680px) {
+  .task1__nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .timeBtn {
   background-color: transparent;
   border: none;
