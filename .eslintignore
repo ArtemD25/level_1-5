@@ -1,3 +1,8 @@
 /.git
 /.vscode
 node_modules
+moment.js
+src/js
+src/ts
+dist/
+gulpfile.js

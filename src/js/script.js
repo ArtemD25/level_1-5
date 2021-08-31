@@ -1,3 +1,5 @@
+import * as moment from '../../node_modules/moment/moment';
+
 const timeOutput = document.getElementById('taks1__time');
 const downBtn = document.querySelector('#task1__downBtn');
 const upBtn = document.querySelector('#task1__upBtn');
@@ -78,5 +80,3 @@ stopBtn.addEventListener('click', () => {
   timeOutput.innerHTML = userTime.format('mm:ss');
   showControls();
 });
-
-let num = 1

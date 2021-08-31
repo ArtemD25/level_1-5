@@ -40,4 +40,3 @@ Thumbs.db
 ######################
 *.txt
 node_modules/*
-src/*
