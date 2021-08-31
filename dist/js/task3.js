@@ -1,12 +1,9 @@
-'use strict';
-
-const object2: object = {
+const object2 = {
   gg: {
     cvalue: 100,
   },
 };
-
-const object: object = {
+const object = {
   hello: {
     cvalue: 1,
   },
@@ -20,14 +17,12 @@ const object: object = {
     },
   },
 };
-
 function createSumFunc() {
-  let sum: number = 0;
-  const defaultValue: number = 100;
-
-  return function (obj: object): number {
+  let sum = 0;
+  const defaultValue = 100;
+  return function (obj) {
     if (Object.keys(obj).length > 0) {
-      Object.values(obj).forEach(function (value) {
+      Object.values(obj).forEach((value) => {
         if (typeof value === 'number') {
           sum += value;
         } else if (typeof value === 'string') {
@@ -43,10 +38,8 @@ function createSumFunc() {
         }
       });
     }
-
     return sum;
   };
 }
-
 const sumValues = createSumFunc();
 console.log(sumValues(object));

@@ -2,7 +2,6 @@
 /.vscode
 node_modules
 moment.js
-src/js
-src/ts
-dist/
+src/
+dist/js/script.js
 gulpfile.js

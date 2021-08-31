@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+      "target": "es2017",
+      "removeComments": false,
+      "outDir": "./src/ts/",
+      "sourceMap": false,
+      "outDir": "./dist/js",
+  },
+  "files": [
+    "./src/ts/task3.ts"
+  ]
+}

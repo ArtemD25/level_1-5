@@ -15,5 +15,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "no-use-before-define": "warn",
+      "no-inner-declarations": "warn"
     }
 }
