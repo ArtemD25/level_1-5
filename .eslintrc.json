@@ -16,6 +16,7 @@
     ],
     "rules": {
       "no-use-before-define": "warn",
-      "no-inner-declarations": "warn"
+      "no-inner-declarations": "warn",
+      "no-unused-expressions": "warn"
     }
 }
