@@ -2,6 +2,6 @@
 /.vscode
 node_modules
 moment.js
-src/
+src/js
 dist/js/script.js
 gulpfile.js

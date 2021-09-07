@@ -1,5 +1,3 @@
-'use strict';
-
 const object2: object = {
   gg: {
     cvalue: 100,
@@ -42,12 +40,12 @@ function createSumFunc() {
 
   return function (obj: object): number {
     if (Object.keys(obj).length > 0) {
-      Object.values(obj).forEach(function (value) {
+      Object.values(obj).forEach((value) => {
         if (typeof value === 'number') {
           sum += value;
         } else if (typeof value === 'string') {
           Number.isNaN(parseFloat(value)) ? (sum += defaultValue) : (sum += parseFloat(value));
-        } else if (value === undefined) {
+        } else if (value === 'undefined') {
           sum += defaultValue;
         } else {
           sumValues(value);

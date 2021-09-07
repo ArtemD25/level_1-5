@@ -2,9 +2,11 @@
   "compilerOptions": {
       "target": "es2017",
       "removeComments": false,
-      "outDir": "./src/ts/",
       "sourceMap": false,
       "outDir": "./dist/js",
+      "strict": true,         
+      "noImplicitAny": true,
+      "esModuleInterop": true
   },
   "files": [
     "./src/ts/task3.ts"

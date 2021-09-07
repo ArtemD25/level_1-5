@@ -17,6 +17,9 @@
     "rules": {
       "no-use-before-define": "warn",
       "no-inner-declarations": "warn",
-      "no-unused-expressions": "warn"
+      "no-unused-expressions": "warn",
+      "no-param-reassign": "warn",
+      "no-return-assign": "warn"
+
     }
 }

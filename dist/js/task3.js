@@ -41,7 +41,7 @@ function createSumFunc() {
           sum += value;
         } else if (typeof value === 'string') {
           Number.isNaN(parseFloat(value)) ? sum += defaultValue : sum += parseFloat(value);
-        } else if (value === undefined) {
+        } else if (value === 'undefined') {
           sum += defaultValue;
         } else {
           sumValues(value);
